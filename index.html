@@ -701,6 +701,23 @@
       margin: 8px 0 0;
     }
     .embed-caption a{ color: var(--v-ukubona); }
+    .footnote{
+      margin: 14px 0 0;
+      padding: 14px 16px;
+      border: 1px dashed color-mix(in srgb, var(--v-ukubona) 45%, var(--rule));
+      border-radius: 4px;
+      background: color-mix(in srgb, var(--v-ukubona) 4%, transparent);
+    }
+    .footnote-label{
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--v-ukubona);
+      margin: 0 0 10px;
+    }
+    .footnote p{ font-size: 14px; margin: 0 0 12px; }
+    .footnote p:last-child{ margin-bottom: 0; }
   </style>
 
   <section class="voice" style="--voice-color: var(--v-ukubona);">
@@ -721,6 +738,14 @@
             <iframe src="https://www.youtube.com/embed/XuoqKYxDHVc" title="Staged test case A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <p class="embed-caption">Test case A — <a href="https://www.youtube.com/watch?v=XuoqKYxDHVc" target="_blank" rel="noopener">youtube.com/watch?v=XuoqKYxDHVc</a></p>
+
+          <div class="footnote">
+            <p class="footnote-label">Footnote — Test case A, 33:00</p>
+            <p><strong>Ukubona:</strong> In test-case A "radically accelerated" is used at 33:00. In another pentad (position, velocity, acceleration, jerk, snap), might we not correct Elon and call it "Jerk"? Perhaps something to be studied by "Search" (IV) rather than "Cache" (II)??</p>
+            <p><strong>Claude (prior session):</strong> Physics-wise, the correction is clean. "Accelerate" already means d(velocity)/dt ≠ 0. If someone says a process is "radically accelerating" — i.e., the <em>acceleration itself</em> is ramping — that's a claim about d(acceleration)/dt, which is jerk by definition. So if the quote is doing that (describing acceleration that's itself accelerating, not just "moving fast" loosely dressed up as "accelerated"), then yes: the precise term is jerk, and "radically accelerated" is the sloppy System-1 gloss for it. Worth flagging though — I haven't watched the clip, so I can't confirm the quote is actually making a second-derivative claim rather than just emphatic first-derivative language ("really speeding up"). That's checkable if you want me to pull the transcript around 33:00.</p>
+            <p>On the Cache-vs-Search placement: I think you're right, but for a reason worth stating plainly rather than assuming. Cache/System 1 reaches for the nearest available word under time pressure — "accelerate" is the common, load-bearing verb everyone already has cached for "getting faster," so it gets used even when the more accurate term (jerk) exists but isn't reflexively available. Pulling out "jerk" requires stopping, decomposing the claim into its actual derivative order, and retrieving a less-common term for it. That's textbook Search: slow, deliberate, decomposition-driven, correcting a fast heuristic. So the mapping holds structurally, not just by analogy — it's an instance of the same Cache/Search split you'd apply to language generally (reach for the common word vs. retrieve the precise one).</p>
+            <p>One thing I'd push you on, in the same spirit as the "falsifiable mapping" point from the ledger: is the appeal of "jerk" here partly load-bearing because it's <em>also</em> a pun on Musk's public reputation? That's fine as color, but worth separating from the physics claim — the pentad gains real teeth if it's precise about d³x/dt³ (jerk) vs d⁴x/dt⁴ (snap) regardless of who's speaking, and starts looking like retrofitting if the term choice is doing double duty as an insult. If you want a genuinely useful next test: find a case in the corpus where the <em>speaker himself</em> corrects loose acceleration-language into a higher derivative — that would be a real instance of Cache→Search happening in one person's speech, not just you supplying the correction externally.</p>
+          </div>
         </div>
         <div class="embed-col">
           <div class="embed-frame">
@@ -756,4 +781,4 @@
 </script>
 
 </body>
-</html>    
+</html>
